@@ -17,6 +17,8 @@ body{
 	height: 1000px;
 }
 
+
+
 footer {
 	width: 86%;
 	padding: 5%;
@@ -31,6 +33,15 @@ footer img {
 	margin-left: 2%;
 	padding: 1.2em;
 }
+
+footer a {
+	text-align: center;
+}
+
+
+
+
+
 
 footer img:hover {
 	transition: all .2s ease-in-out;
@@ -151,7 +162,7 @@ section h1,h2 {
 	.navigation {
 		justify-content: space-around;
 	}
-	footer img {
+	footer a img {
 		width: 12%;
 	}
 }
@@ -177,7 +188,7 @@ section h1,h2 {
 		margin-bottom: 3.5%;
 	}
 	 a img {
-		width: 45%;
+		width: 75%;
 		padding: 1.5em;
 	}
 }
