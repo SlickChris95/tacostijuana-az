@@ -51,6 +51,7 @@ section #graphic {
 	font-family:'Lora';
 	color: black;
 	margin-top: 1.7em;
+	margin-bottom: 1.3em;
 }
 
 section #graphic a {
@@ -58,7 +59,7 @@ section #graphic a {
 	color: black;
 }
 
-#container1 {
+.textContainer {
 	display:flex;
 	align-items: center;
 	flex-flow:column wrap;
@@ -68,7 +69,7 @@ section #graphic a {
 	align-items: center;
 }
 
-#container1 p {
+.textContainer p {
 	display:flex;
 	flex-direction: center;
 	margin-top: 5.5%;
@@ -78,6 +79,10 @@ section #graphic a {
 	font-size:1.3rem;
 	justify-content: center;
 	line-height: 1.5;
+}
+
+.textContainer #bio {
+	font-size: 1.4em;
 }
 #banner {
 	background-image: url('pics/tacosTijuana.jpg');
@@ -119,7 +124,7 @@ section #graphic a {
    height:100%;
 }
 
-section img {
+#fam {
 	margin-top: 1.2em;
 	width: 100%;
 	text-align: center;
@@ -163,10 +168,10 @@ section h1,h2 {
 		border-top: 1px solid rgba(255,255,255,0.3); 
    		border-bottom: 1px solid rgba(0,0,0,0.1);
 	}
-	#container1 {
+	.textContainer {
 		justify-content: center
 	}
-	#container1 p {
+	.textContainer p {
 		width: 100%;
 		margin-top: 11.5%;
 		margin-bottom: 3.5%;
