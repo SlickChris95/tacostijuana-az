@@ -163,9 +163,12 @@ section h1,h2 {
 		justify-content: space-around;
 	}
 	footer a img {
-		width: 12%;
+		width: 42%;
 	}
 }
+
+
+			/*Mobile*/
 
 @media all and (max-width: 600px){
 	.navigation {
@@ -187,8 +190,8 @@ section h1,h2 {
 		margin-top: 11.5%;
 		margin-bottom: 3.5%;
 	}
-	 a img {
-		width: 75%;
+	 footer a img  {
+		width: 60%;
 		padding: 1.5em;
 	}
 }
