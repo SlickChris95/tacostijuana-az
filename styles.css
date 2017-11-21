@@ -1,0 +1,156 @@
+
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Lora');
+
+* {
+   margin: 0px;
+   padding: 0px;
+}
+
+html {
+	font-size: 16px;
+	margin: 0;
+}
+
+body{
+	background-color: #fe8156;
+	font-family: 'Alfa Slab One', Arial
+	height: 1000px;
+}
+
+footer {
+	width: 86%;
+	padding: 5%;
+	display:flex;
+	justify-content: center;
+	align-content: center;
+}
+/*add media queries to change width % of footer*/
+
+footer img {
+	width: 4.3rem;
+	margin-left: 2%;
+	padding: 1.2em;
+}
+
+footer img:hover {
+	transition: all .2s ease-in-out;
+	transform: scale(1.1);
+}
+
+section #hash {
+	text-align: center;
+	font-size: 1.7em;
+	font-family:'Alfa Slab One';
+	color: #c93823;
+
+}
+
+section #graphic {
+	text-align:center;
+	font-size: 1.1em;
+	font-family:'Lora';
+	color: black;
+	margin-top: 1.7em;
+}
+
+section #graphic a {
+	text-decoration: none;
+	color: black;
+}
+
+#container1 {
+	display:flex;
+	align-items: center;
+	flex-flow:column wrap;
+	max-width: 86%;
+	margin: auto;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+#container1 p {
+	display:flex;
+	flex-direction: center;
+	margin-top: 5.5%;
+	margin-bottom: 0%;
+	width:65%;
+	text-align:center;
+	font-size:1.3rem;
+	justify-content: center;
+	line-height: 1.5;
+}
+#banner {
+	background-image: url('pics/tacosTijuana.jpg');
+	background-position: center;
+	background-size:cover;
+	background-repeat: no-repeat;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	height: 25rem;
+}
+
+.navigation {
+	margin: 0;
+	list-style: none;
+	background: #c93823;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;
+}
+
+.navigation a {
+	text-decoration: none;
+	display:block;
+	padding: 1em;
+	color: white;
+	font-size: 1.2em;
+	font-family: 'Alfa Slab One', Arial
+}
+
+.navigation a:hover {
+  background: red;
+  color: black;
+}
+
+
+#container {
+   height:100%;
+}
+
+
+@media all and (max-width: 800px){
+	.navigation {
+		justify-content: space-around;
+	}
+	footer img {
+		width: 12%;
+	}
+}
+
+@media all and (max-width: 600px){
+	.navigation {
+		flex-flow: column wrap;
+		padding: 0;
+	}
+	.navigation a {
+		font-size: 1.5em;
+		text-align: center;
+		padding: 10px;
+		border-top: 1px solid rgba(255,255,255,0.3); 
+   		border-bottom: 1px solid rgba(0,0,0,0.1);
+	}
+	#container1 {
+		justify-content: center
+	}
+	#container1 p {
+		width: 100%;
+		margin-top: 11.5%;
+		margin-bottom: 3.5%;
+	}
+	footer img {
+		width: 15%;
+		padding: 1.5em;
+	}
+}
