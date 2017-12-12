@@ -9,6 +9,7 @@
 html {
 	font-size: 16px;
 	margin: 0;
+	
 }
 
 body{
@@ -37,10 +38,6 @@ footer img {
 footer a {
 	text-align: center;
 }
-
-
-
-
 
 
 footer img:hover {
@@ -118,6 +115,7 @@ section #graphic a {
 
 .navigation a {
 	text-decoration: none;
+	position: relative;
 	display:block;
 	padding: 1em;
 	color: white;
@@ -125,21 +123,67 @@ section #graphic a {
 	font-family: 'Alfa Slab One', Arial
 }
 
-.navigation a:hover {
-  background: red;
+/*.navigation a:hover {
+  background: #a72b1a;
   color: black;
+}*/
+
+/* test*/
+
+li > a {
+	position: relative;
+	text-decoration: none;
+}
+
+li > a:hover{
+	color: #000;
+}
+
+li > a:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #000;
+	visibility: hidden;
+	-webkit-transform: scaleX(0);
+	transform: scaleX(0);
+	-webkit-transition: all 0.3s ease-in-out 0s;
+	transition: all 0.3s ease-in-out 0s;
+}
+
+li > a:hover:before {
+	visibility: visible;
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
 }
 
 
-#container {
-   height:100%;
-}
 
 #fam {
-	margin-top: 1.2em;
-	width: 100%;
+	display:block;
+	margin: 1.2em auto;
+	width: 600px;
 	text-align: center;
 	overflow: hidden;
+}
+
+ #logo {
+ 	font-size: 57px;
+    color: beige;
+    font-family: 'Alfa Slab One';
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    letter-spacing:6px;
+    margin-bottom: .8em;
+}
+
+ .contact {
+	text-align: center;
+	margin-top:1.2em;
+	font-family:'Lora';
+	font-size:1.2em;
 }
 
 section h1 {
@@ -158,12 +202,33 @@ section h1,h2 {
 	text-align: center;
 }
 
+/* Google API*/
+
+iframe {
+	display:block;
+	padding-top: 2.0em;
+	margin: 1.2em auto;
+}
+
+.map {
+	margin: 0 auto;
+}
+
+
+
+
 @media all and (max-width: 800px){
 	.navigation {
 		justify-content: space-around;
 	}
 	footer a img {
 		width: 42%;
+	}
+	iframe {
+		width: 85%;
+	}
+	#fam {
+		width: 75%;
 	}
 }
 
@@ -191,7 +256,14 @@ section h1,h2 {
 		margin-bottom: 3.5%;
 	}
 	 footer a img  {
-		width: 60%;
+		width: 50%;
 		padding: 1.5em;
 	}
+	iframe {
+		width: 100%;
+	}
+	#fam {
+		width:100%;
+	}
 }
+
