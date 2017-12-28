@@ -155,6 +155,53 @@ section h1,h2 {
 	font-size:1.2em;
 }
 
+
+/*Index */
+.slide-show{
+	margin-top: 1.2em;
+}
+
+.slide-caption {
+	font-family: 'Alfa Slab One';
+	color:firebrick;
+	font-size: 1em;
+}
+.quote-container {
+	width: 800px;
+	margin: 2.5em auto;
+}
+.quote p {
+	text-align: center;
+}
+.quote p:before{
+	content:"\f10d";
+	font-family:'Fontawesome';
+}
+.quote-author {
+	text-align: center;
+	margin-top: 1.2em;
+	font-size: .9em;
+	font-weight: bold;
+}
+
+.user {
+	width:120px;
+	display: block;
+	border-radius: 60%;
+	margin: 1.2em auto;
+}
+.rating{
+	text-align: center;
+}
+.checked {
+	color: yellow;
+}
+.awards {
+	display:block;
+	margin: 1.3em auto;
+	width: 250px;
+}
+
 /* Menu */
  section p {
 	font-family: 'Lora';
@@ -183,6 +230,10 @@ section h1,h2 {
 .food-item {
 	width: 300px;
 }
+.extra {
+	font-family: 'Lora';
+	font-size:1.4em;
+}
 
 .price {
 	text-align: right;
@@ -194,16 +245,16 @@ section h1,h2 {
 .menu-container {
 	display:flex;
 	justify-content: center;
+	align-items: center;
 }
 .menu {
 	width: 350px;
 	margin-top: 1.2em;
 	display:flex;
 	justify-content: center;
-	align-items: center;
 	flex-wrap: wrap;
 	flex-direction: row;
-	/*border: 2px solid green;*/
+	align-items: center;
 }
 
 #info {
@@ -233,18 +284,18 @@ footer {
 	justify-content: center;
 }
 
-footer img {
+.foot img {
 	width: 4.3rem;
 	margin-left: 2%;
 	padding: 1.2em;
 }
 
-footer a {
+.foot a {
 	text-align: center;
 }
 
 
-footer img:hover {
+.foot img:hover {
 	transition: all .2s ease-in-out;
 	transform: scale(1.1);
 }
@@ -286,7 +337,7 @@ iframe {
 
 
 
-@media all and (max-width: 800px){
+@media all and (max-width: 930px){
 	.navigation {
 		justify-content: space-around;
 	}
@@ -299,10 +350,37 @@ iframe {
 	#fam {
 		width: 75%;
 	}
+	.menu-container{
+		justify-content: space-around;
+	}
+	.menu{
+		justify-content: center;
+		align-items:center;
+	}
+	.food-item {
+		width: 90%
+	}
+	.food-title {
+		margin-left:1em;
+	}
+	.quote-container {
+		width:90%;
+	}
+	.awards {
+		width: 30%;
+	}
+	
+}
+@media all and (max-width:750px){
+.menu-container{
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 
-			/*Mobile*/
+
+	/*Mobile*/
 
 @media all and (max-width: 600px){
 	.navigation {
@@ -333,6 +411,23 @@ iframe {
 	}
 	#fam {
 		width:100%;
+	}
+	.menu-container{
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+	.food{
+		flex-direction: column;
+		align-items: center;
+	}
+	.food-title {
+		margin:0;
+	}
+	.menu {
+		width: 300px;
+	}
+	.awards {
+		width:50%;
 	}
 }
 

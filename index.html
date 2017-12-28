@@ -5,35 +5,132 @@
 	<meta name="viewport" content="width=device-width">
 	<link rel="shortcut icon" type="image/png" href="pics/favicon.png">
 	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
 	<div id="banner"></div>
-	<ul class="navigation">
+	<ul style="margin-bottom: 2em" class="navigation">
 		<li><a href="index.html">Home</a></li>
 		<li><a href="menu.html">Menu</a></li>
-		<li>
-<a href="location.html">Locations</a></li>
+		<li><a href="location.html">Locations</a></li>
 		<li><a href="about.html">About Us</a></li>
 	</ul>
-	<section class="textContainer">
-		<p class="intro">Bacon ipsum dolor amet strip steak tongue kevin, ham brisket capicola chuck cow beef ribs meatball short loin. Swine picanha tenderloin pancetta, leberkas drumstick chicken hamburger jerky beef ground round kielbasa corned beef shoulder landjaeger. Cow venison frankfurter, pork pastrami ball tip bresaola sausage prosciutto hamburger salami tongue fatback short loin. Doner corned beef short ribs tail venison. Picanha tail ham hock, drumstick tri-tip shank chicken ribeye sausage strip steak.</p>
-
-		<p class="intro">Pastrami alcatra salami kielbasa, chicken pork kevin turducken rump tenderloin capicola. Leberkas doner meatloaf, pork chop pig ground round beef brisket kielbasa. Ham capicola ball tip, short ribs tenderloin rump shankle t-bone ham hock. Chicken capicola shank jerky, burgdoggen short loin pork belly kielbasa bresaola sirloin alcatra. Pig cupim tongue kielbasa chuck ball tip chicken leberkas capicola salami shankle pork rump. Prosciutto short ribs shoulder frankfurter pork loin porchetta. Picanha pork cupim, jowl andouille short ribs pastrami t-bone beef tenderloin shank landjaeger swine fatback sirloin.</p>
-
-		<p class="intro">Pastrami alcatra salami kielbasa, chicken pork kevin turducken rump tenderloin capicola. Leberkas doner meatloaf, pork chop pig ground round beef brisket kielbasa. Ham capicola ball tip, short ribs tenderloin rump shankle t-bone ham hock. Chicken capicola shank jerky, burgdoggen short loin pork belly kielbasa bresaola sirloin alcatra. Pig cupim tongue kielbasa chuck ball tip chicken leberkas capicola salami shankle pork rump. Prosciutto short ribs shoulder frankfurter pork loin porchetta. Picanha pork cupim, jowl andouille short ribs pastrami t-bone beef tenderloin shank landjaeger swine fatback sirloin.</p>
-
-		<p class="intro">Pastrami alcatra salami kielbasa, chicken pork kevin turducken rump tenderloin capicola. Leberkas doner meatloaf, pork chop pig ground round beef brisket kielbasa. Ham capicola ball tip, short ribs tenderloin rump shankle t-bone ham hock. Chicken capicola shank jerky, burgdoggen short loin pork belly kielbasa bresaola sirloin alcatra. Pig cupim tongue kielbasa chuck ball tip chicken leberkas capicola salami shankle pork rump. Prosciutto short ribs shoulder frankfurter pork loin porchetta. Picanha pork cupim, jowl andouille short ribs pastrami t-bone beef tenderloin shank landjaeger swine fatback sirloin.</p>
-	</section>
 
 
+					<!-- slideshow -->
+<div class="w3-content w3-display-container">
+
+
+<div class="w3-display-container mySlides">
+  <img src="slide/slide2.jpg" style="width:100%">
+  <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16 w3-amber">
+     <p class="slide-caption">A big thanks to @stvincentdepaulphx, @12news and @bashas for inviting us to participate in this year's turkey tuesday event! </p> 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="slide/slide9.jpg" style="width:100%">
+  <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16 w3-amber">
+     <p class="slide-caption"> Come join us on Tuesdays for 20% off tacos in both locations!
+#tacotuesday #tacostijuana</p> 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="slide/slide3.jpg" style="width:100%">
+  <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16 w3-amber">
+     <p class="slide-caption">Grab some tacos and listen to some local bands!</p> 
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="slide/slide7.jpg" style="width:100%">
+  <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16 w3-amber">
+     <p class="slide-caption">Mmmmm Mulitas!!! Only $2.99!</p> 
+  </div>
+</div>
+<div class="w3-display-container mySlides">
+  <img src="slide/slide8.jpg" style="width:100%">
+  <div class="w3-display-bottomcenter w3-large w3-container w3-padding-16 w3-amber">
+     <p class="slide-caption">Join us to finish off the weekend with some delicious tacos!</p> 
+  </div>
+</div>
+<button class="w3-button w3-hover-black w3-medium w3-round w3-display-left w3-red" onclick="plusDivs(-1)"><b>&#10094;</b></button>
+<button class="w3-button w3-hover-black w3-medium w3-round w3-display-right w3-red" onclick="plusDivs(1)"><b>&#10095;</b></button>
+</div>
+
+<script>
+	var slideIndex = 1;
+	showDivs(slideIndex);
+
+	function plusDivs(n) {
+	  showDivs(slideIndex += n);
+	}
+
+	function showDivs(n) {
+	  var i;
+	  var x = document.getElementsByClassName("mySlides");
+	  if (n > x.length) {slideIndex = 1}    
+	  if (n < 1) {slideIndex = x.length}
+	  for (i = 0; i < x.length; i++) {
+	     x[i].style.display = "none";  
+	  }
+	  x[slideIndex-1].style.display = "block";  
+	}
+</script>
+<div class="quote-container">
+	<div class="quote">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+	</div>
+	<div>
+		<img class='user' src="imgs/user1.jpg">
+	</div>
+	<div>
+		<p class="quote-author"> John Smith</p>
+	</div>
+	<div class="rating">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star"></span>
+	</div>
+</div>
+<div class="quote-container">
+	<div class="quote">
+		<p>
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. !</p>
+	</div>
+	<div>
+		<img class='user' src="imgs/user2.jpg">
+	</div>
+	<div>
+		<p class="quote-author"> Jane Doe</p>
+	</div>
+	<div class="rating">
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+		<span class="fa fa-star checked"></span>
+	</div>
+</div>
+<div>
+	<img class="awards" src="imgs/best_of_val.png">
+</div>
+
+
+<div></div>
 	<footer class="foot-container">
 		<div class="foot">
-			<a href="https://www.facebook.com/tacosaz/" target="_blank"><img src="social/facebook.svg" title="Like us on facebook!" /> </a>
+			<a href="https://www.facebook.com/tacosaz/" target="_blank"><img style="width:100px" src="social/facebook.svg" title="Like us on facebook!" /> </a>
 			<a href="https://www.instagram.com/tacos.tijuana/" target="_blank">
-			<img src="social/instagram.svg" title="Share us on instagram!" />
+			<img style="width:100px" src="social/instagram.svg" title="Share us on instagram!" />
 			</a>
 			<a href="https://www.yelp.com/biz/tacos-tijuana-peoria-3" target="_blank">
-			<img src="social/Yelp.svg" title="Rate us on Yelp!" />
+			<img style="width:100px" src="social/Yelp.svg" title="Rate us on Yelp!" />
 			</a>
 		</div>
 	</footer>
